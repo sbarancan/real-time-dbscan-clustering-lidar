@@ -1,6 +1,6 @@
 # Real-Time DBSCAN on YDLidar G2
 
-This project demonstrates real-time visualization and clustering of data from the YDLidar G2 using the DBSCAN (Density-Based Spatial Clustering of Applications with Noise) algorithm in Python. The visualization is implemented with `pygame`, while the data processing and clustering are handled using `numpy` and `scikit-learn`. By clustering objects around with lidar, we can develop further algorithms to control robots in the environment.
+Real-time visualization and clustering of data from the YDLidar G2 using the DBSCAN (Density-Based Spatial Clustering of Applications with Noise) algorithm.. The visualization is implemented with `pygame`, while the data processing and clustering are handled using `numpy` and `scikit-learn`. By clustering objects around with lidar, we can develop further algorithms to control robots in the environment.
 ![alt text](./images/lidarscan.png)
 
 Two critical values for [DBSCAN](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html) to work well. Epsilon (eps) is the maximum distance between two points for them to be considered as in the same neighborhood. min_samples is the minimum number of points required to form a dense region (i.e., a cluster). To optimize them we generate the K-distance graph and silhouette score.
